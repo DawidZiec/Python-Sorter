@@ -1,5 +1,7 @@
 # program implementujacy sortowanie listy, real thing
 import random
+import bubble
+import quick
 
 print(" ")
 print('''Witaj w pythonowym sorterze!
@@ -43,25 +45,23 @@ if wybor == 'w':
 ##########################  BUBBLE SORT  ################################
 #########################################################################
 
-# wypisanie #1
-print(" ")
-print("Przed sortowaniem:")
-print(x)
-
-# sortowanie
-for j in range(len(x)-1, 0, -1):
-    for k in range(j):
-        if x[k] > x[k+1]:
-            temp = x[k]
-            x[k] = x[k+1]
-            x[k+1] = temp
-
-# wypisanie #2
-print(" ")
-print("Po sortowaniu:")
-print(x)
-print(" ")
+if metoda == '1':
+    bubble.bubbleSort(x)
 
 #########################################################################
 #############################  QUICKSORT  ###############################
 #########################################################################
+
+else:
+    # wypisanie #1
+    print(" ")
+    print("Przed sortowaniem:")
+    print(x)
+
+    quick.quickSort(x, 0, len(x)-1)
+
+    # wypisanie #2
+    print(" ")
+    print("Po sortowaniu szybkim:")
+    print(x)
+    print(" ")
