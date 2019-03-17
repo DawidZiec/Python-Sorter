@@ -83,4 +83,4 @@ else:
     x.reverse();
     print(x)
 
-# probowanie gita commita z konsoli v2
+# probowanie gita commita z konsoli v23
