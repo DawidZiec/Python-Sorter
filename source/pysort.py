@@ -82,5 +82,3 @@ else:
     print("Po sortowaniu szybkim malejaco:")
     x.reverse();
     print(x)
-
-# probowanie gita commita z konsoli v23
