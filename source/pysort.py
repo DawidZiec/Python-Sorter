@@ -46,7 +46,21 @@ if wybor == 'w':
 #########################################################################
 
 if metoda == '1':
+    # wypisanie #1
+    print(" ")
+    print("Przed sortowaniem:")
+    print(x)
+
     bubble.bubbleSort(x)
+
+    # wypisanie #2
+    print(" ")
+    print("Po sortowaniu babelkowym rosnaco:")
+    print(x)
+    print(" ")
+    print("Po sortowaniu babelkowym malejaco:")
+    x.reverse();
+    print(x)
 
 #########################################################################
 #############################  QUICKSORT  ###############################
@@ -62,6 +76,9 @@ else:
 
     # wypisanie #2
     print(" ")
-    print("Po sortowaniu szybkim:")
+    print("Po sortowaniu szybkim rosnaco:")
     print(x)
     print(" ")
+    print("Po sortowaniu szybkim malejaco:")
+    x.reverse();
+    print(x)
