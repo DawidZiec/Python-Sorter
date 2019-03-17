@@ -4,7 +4,7 @@ import bubble
 import quick
 import bucket
 
-print(" ")
+print(" ") # tescik bez -a
 print('''Witaj w pythonowym sorterze!
 Dzieki niemu mozesz dokonac sortowania wybrana metoda wpisanych przez Ciebie lub losowych liczb.
 Pamietaj, aby zakonczyc dzialanie apliacji wczesniej, uzyj skrotu ctrl+Z i zatwierdz enterem''')
