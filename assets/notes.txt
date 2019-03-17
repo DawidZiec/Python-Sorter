@@ -12,7 +12,7 @@ Algorytmy do zaimplementowania:
 Dodać wybór sortowanie malejąco, rosnąco
 Dodać import liczb z pliku i eksport liczb do pliku
 
-Podzielić projekt na mniejsze części (pliki?, funkcje?)
+Podzielić projekt na mniejsze części (pliki?, funkcje?) - ZROBIONE
 Pomyśleć o floatach
 Pomyśleć o OOP
 
