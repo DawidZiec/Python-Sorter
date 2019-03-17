@@ -82,3 +82,5 @@ else:
     print("Po sortowaniu szybkim malejaco:")
     x.reverse();
     print(x)
+
+    # sprawdzamy, czy vs code git tu byl
