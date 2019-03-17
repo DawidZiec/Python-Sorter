@@ -1,0 +1,20 @@
+Algorytmy zaimplementowane:
+    Sortowanie bąbelkowe (Bubble Sort)
+
+Algorytmy do zaimplementowania:
+    Sortowanie szybkie (Qicksort)
+
+    Sortowanie kubełkowe / przez zliczanie (Bucket Sort)
+    Sortowanie przez scalanie (Merge Sort)
+    Sortowanie kopcowe / przez kopcowanie (Heap Sort)
+
+
+Dodać wybór sortowanie malejąco, rosnąco
+Dodać import liczb z pliku i eksport liczb do pliku
+
+Podzielić projekt na mniejsze części (pliki?, funkcje?)
+Pomyśleć o floatach
+Pomyśleć o OOP
+
+
+WOW, dodać wizualizację, może nawet z dźwiękiem
