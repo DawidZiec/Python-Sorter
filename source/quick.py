@@ -23,4 +23,3 @@ def quickSort(lista, p, r):
         q = partition(lista, p, r) # dzieli liste na dwie czesci, q to punkt podzialu
         quickSort(lista, p, q)     # rekurencyjnie quickSort dla pierwszej czesci
         quickSort(lista, q+1, r)   #rekurencyjnie quickSort dla drugiej czesci
-
