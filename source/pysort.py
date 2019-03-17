@@ -10,7 +10,7 @@ Pamietaj, aby zakonczyc dzialanie apliacji wczesniej, uzyj skrotu ctrl+Z i zatwi
 print(" ")
 
 metoda = '0'
-# wybor: metoda sortowania
+# metoda: metoda sortowania
 while metoda != '1' and metoda != '2' and metoda != '3' and metoda != '4' and metoda != '5':
     print("Jakiego algorytmu sortowania chcesz uzyc?")
     print("1 - babelkowe, 2 - szybkie, 3 - kubelkowe, 4 - przez scalanie, 5 - kopcowe")
@@ -18,16 +18,25 @@ while metoda != '1' and metoda != '2' and metoda != '3' and metoda != '4' and me
 
 print(" ")
 
-wybor = 'z'
-# wybor: wlasne liczby, lub losowe
-while wybor != 'w' and wybor != 'l':
+dane = 'z'
+# dane: wlasne liczby, lub losowe
+while dane != 'w' and dane != 'l':
     print("Czy chcesz wprowadzic wlasne liczby do posortowania, czy posortowac losowe?")
     print("w - wlasne, l - losowe")
-    wybor = input()
+    dane = input()
 
 print(" ")
 
-if wybor == 'l':
+kierunek = 'd'
+# dakierunekne: rosnaco, malejaco
+while kierunek != 'r' and kierunek != 'm':
+    print("Chcesz otrzymac liczby posortowane rosnaco, czy malejaco?")
+    print("r - rosnaco, m - malejaco")
+    kierunek = input()
+
+print(" ")
+
+if dane == 'l':
     # wczytanie rozmiaru listy od uzytkownika
     print("Podaj rozmiar listy do posortowania:")
     rozmiar = int(input())
@@ -36,7 +45,7 @@ if wybor == 'l':
     for i in range(rozmiar):
         x.append(random.randrange(1000))
 
-if wybor == 'w':
+if dane == 'w':
     # uzytkownik wypelnia liste
     print("Wypisz liczby, oddzielajac je spacjami")
     x = [int(x) for x in input().split()]
@@ -54,13 +63,15 @@ if metoda == '1':
     bubble.bubbleSort(x)
 
     # wypisanie #2
-    print(" ")
-    print("Po sortowaniu babelkowym rosnaco:")
-    print(x)
-    print(" ")
-    print("Po sortowaniu babelkowym malejaco:")
-    x.reverse();
-    print(x)
+    if kierunek == 'r':
+        print(" ")
+        print("Po sortowaniu babelkowym rosnaco:")
+        print(x)
+    if kierunek == 'm':
+        print(" ")
+        print("Po sortowaniu babelkowym malejaco:")
+        x.reverse();
+        print(x)
 
 #########################################################################
 #############################  QUICKSORT  ###############################
@@ -75,13 +86,15 @@ else:
     quick.quickSort(x, 0, len(x)-1)
 
     # wypisanie #2
-    print(" ")
-    print("Po sortowaniu szybkim rosnaco:")
-    print(x)
-    print(" ")
-    print("Po sortowaniu szybkim malejaco:")
-    x.reverse();
-    print(x)
+    if kierunek == 'r':
+        print(" ")
+        print("Po sortowaniu szybkim rosnaco:")
+        print(x)
+    if kierunek == 'm':
+        print(" ")
+        print("Po sortowaniu szybkim malejaco:")
+        x.reverse();
+        print(x)
 
 #########################################################################
 ############################  BUCKET SORT  ##############################
