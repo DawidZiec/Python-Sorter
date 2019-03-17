@@ -1,5 +1,4 @@
-def bubbleSort(x):
-    
+def bubbleSort(x): 
     # sortowanie
     for j in range(len(x)-1, 0, -1):
         for k in range(j):
