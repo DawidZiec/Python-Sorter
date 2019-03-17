@@ -2,6 +2,7 @@
 import random
 import bubble
 import quick
+import bucket
 
 print(" ")
 print('''Witaj w pythonowym sorterze!
@@ -11,7 +12,7 @@ print(" ")
 
 metoda = '0'
 # metoda: metoda sortowania
-while metoda != '1' and metoda != '2' and metoda != '3' and metoda != '4' and metoda != '5':
+while metoda != '1' and metoda != '2' and metoda != '3': #and metoda != '4' and metoda != '5':
     print("Jakiego algorytmu sortowania chcesz uzyc?")
     print("1 - babelkowe, 2 - szybkie, 3 - kubelkowe, 4 - przez scalanie, 5 - kopcowe")
     metoda = input()
@@ -77,7 +78,7 @@ if metoda == '1':
 #############################  QUICKSORT  ###############################
 #########################################################################
 
-else:
+if metoda == '2':
     # wypisanie #1
     print(" ")
     print("Przed sortowaniem:")
@@ -98,4 +99,27 @@ else:
 
 #########################################################################
 ############################  BUCKET SORT  ##############################
+#########################################################################
+
+if metoda == '3':
+    # wypisanie #1
+    print(" ")
+    print("Przed sortowaniem:")
+    print(x)
+
+    t = bucket.bucketSort(x)
+
+    # wypisanie #2
+    if kierunek == 'r':
+        print(" ")
+        print("Po sortowaniu kubelkowym rosnaco:")
+        print(t)
+    if kierunek == 'm':
+        print(" ")
+        print("Po sortowaniu kubelkowym malejaco:")
+        t.reverse();
+        print(t)
+
+#########################################################################
+############################  MERGE SORT  ###############################
 #########################################################################
