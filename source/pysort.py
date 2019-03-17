@@ -83,4 +83,4 @@ else:
     x.reverse();
     print(x)
 
-    # sprawdzamy, czy vs code git tu byl
+    # sprawdzamy, czy vs code git tu byl i czy pamieta kim jestem
