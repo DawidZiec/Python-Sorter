@@ -2,9 +2,9 @@ Algorytmy zaimplementowane:
     Sortowanie bąbelkowe (Bubble Sort)
     Sortowanie szybkie (Qicksort)
     Sortowanie kubełkowe / przez zliczanie (Bucket Sort)
+    Sortowanie przez scalanie (Merge Sort)
 
 Algorytmy do zaimplementowania:
-    Sortowanie przez scalanie (Merge Sort)
     Sortowanie kopcowe / przez kopcowanie (Heap Sort)
 
 
