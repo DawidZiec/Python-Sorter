@@ -9,7 +9,7 @@ import heap
 print(" ")
 print('''Witaj w pythonowym sorterze!
 Dzieki niemu mozesz dokonac sortowania wybrana metoda wpisanych przez Ciebie lub losowych liczb.
-Pamietaj, aby zakonczyc dzialanie apliacji wczesniej, uzyj skrotu ctrl+Z i zatwierdz enterem''')
+Pamietaj, aby zakonczyc dzialanie aplikacji wczesniej, uzyj skrotu ctrl+Z i zatwierdz enterem''')
 print(" ")
 
 metoda = '0'
@@ -31,7 +31,7 @@ while dane != 'w' and dane != 'l':
 print(" ")
 
 kierunek = 'd'
-# dakierunekne: rosnaco, malejaco
+# kierunek: rosnaco, malejaco
 while kierunek != 'r' and kierunek != 'm':
     print("Chcesz otrzymac liczby posortowane rosnaco, czy malejaco?")
     print("r - rosnaco, m - malejaco")
@@ -50,7 +50,7 @@ if dane == 'l':
 
 if dane == 'w':
     # uzytkownik wypelnia liste
-    print("Wypisz liczby, oddzielajac je spacjami")
+    print("Wpisz liczby, oddzielajac je spacjami")
     x = [int(x) for x in input().split()]
 
 #########################################################################
@@ -109,7 +109,7 @@ if metoda == '3':
     print("Przed sortowaniem:")
     print(x)
 
-    t = bucket.bucketSort(x)
+    t = bucket.bucketSort(x) # nowa zmienna, bo metoda nie dziala na oryginalnej liscie
 
     # wypisanie #2
     if kierunek == 'r':
