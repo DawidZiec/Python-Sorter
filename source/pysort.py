@@ -1,4 +1,4 @@
-# program implementujacy sortowanie listy, real thing
+# program implementujacy sortowanie listy, real thing, by Dawid Ziec
 import random
 import bubble
 import quick
@@ -6,6 +6,10 @@ import bucket
 import merge
 import heap
 import fileio
+
+#########################################################################
+##############################  SETUP  #################################
+#########################################################################
 
 print(" ")
 print('''Witaj w pythonowym sorterze!
@@ -126,6 +130,7 @@ if metoda == '3':
     print(x)
 
     t = bucket.bucketSort(x) # nowa zmienna, bo metoda nie dziala na oryginalnej liscie
+    x = t # do wypisywania do pliku
 
     # wypisanie #2
     if kierunek == 'r':
@@ -183,3 +188,40 @@ if metoda == '5':
         print("Po sortowaniu przez kopcowanie malejaco:")
         x.reverse();
         print(x)
+
+#########################################################################
+############################  FILE OUT  #################################
+#########################################################################
+
+print(" ")
+print('''Powyzej znajduja sie twoje wyniki. 
+Masz jeszcze mozliwosc wyprowadzenia ich do zewnetrzego pliku.
+Pozniej program zakonczy prace.''')
+print(" ")
+
+fo = 'c'
+# fo: zapisujemy do pliku lub nie
+while fo != 't' and fo != 'n':
+    print("Chcesz zapisac swoje wyniki w zewnetrzym pliku?")
+    print("t - tak, n - nie, zakoncz dzialanie programu")
+    fo = input()
+
+print (" ")
+
+if fo == 't':
+    kierunekzapisu = 'f'
+    # kierunekzapisu: wyprowadzamy kierunek sortowania wybrany przez uzytkownika lub obydwa
+    while kierunekzapisu != 'j' and kierunekzapisu != 'd':
+        print('''Chcesz zapisac wybrany przez ciebie kierunek sortowania (rosnaco/malejaco),
+        czy obydwa naraz?''')
+        print("j - jeden, wybrany wczesniej, d - obydwa")
+        kierunekzapisu = input()
+
+        print(" ")
+
+        print("Podaj nazwe wyjsciowego pliku z rozszerzeniem")
+        name = input()
+        fileio.saveFile(name, x, kierunekzapisu)
+
+print(" ")
+print("Dzieki za skorzystanie z programu")
