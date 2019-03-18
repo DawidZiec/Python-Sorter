@@ -4,6 +4,7 @@ import bubble
 import quick
 import bucket
 import merge
+import heap
 
 print(" ")
 print('''Witaj w pythonowym sorterze!
@@ -13,7 +14,7 @@ print(" ")
 
 metoda = '0'
 # metoda: metoda sortowania
-while metoda != '1' and metoda != '2' and metoda != '3' and metoda != '4': # and metoda != '5':
+while metoda != '1' and metoda != '2' and metoda != '3' and metoda != '4' and metoda != '5':
     print("Jakiego algorytmu sortowania chcesz uzyc?")
     print("1 - babelkowe, 2 - szybkie, 3 - kubelkowe, 4 - przez scalanie, 5 - kopcowe")
     metoda = input()
@@ -145,5 +146,24 @@ if metoda == '4':
         print(x)
 
 #########################################################################
-############################  HEAP SORT  ###############################
+############################  HEAP SORT  ################################
 #########################################################################
+
+if metoda == '5':
+    # wypisanie #1
+    print(" ")
+    print("Przed sortowaniem:")
+    print(x)
+
+    heap.heapSort(x)
+
+    # wypisanie #2
+    if kierunek == 'r':
+        print(" ")
+        print("Po sortowaniu przez kopcowanie rosnaco:")
+        print(x)
+    if kierunek == 'm':
+        print(" ")
+        print("Po sortowaniu przez kopcowanie malejaco:")
+        x.reverse();
+        print(x)
