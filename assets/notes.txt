@@ -3,14 +3,12 @@ Algorytmy zaimplementowane:
     Sortowanie szybkie (Qicksort)
     Sortowanie kubełkowe / przez zliczanie (Bucket Sort)
     Sortowanie przez scalanie (Merge Sort)
-
-Algorytmy do zaimplementowania:
     Sortowanie kopcowe / przez kopcowanie (Heap Sort)
 
 
-Dodać wybór sortowanie malejąco, rosnąco - ZrightOBIONE
+Dodać wybór sortowanie malejąco, rosnąco - ZROBIONE
 Dodać import liczb z pliku i eksport liczb do pliku
-Podzielić projekt na mniejsze części (pliki?, funkcje?) - ZrightOBIONE
+Podzielić projekt na mniejsze części (pliki?, funkcje?) - ZROBIONE
 Pomyśleć o floatach
 Pomyśleć o OOP
 
