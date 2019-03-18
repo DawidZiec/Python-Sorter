@@ -5,6 +5,7 @@ import quick
 import bucket
 import merge
 import heap
+import fileio
 
 print(" ")
 print('''Witaj w pythonowym sorterze!
@@ -21,21 +22,21 @@ while metoda != '1' and metoda != '2' and metoda != '3' and metoda != '4' and me
 
 print(" ")
 
-dane = 'z'
-# dane: wlasne liczby, lub losowe
-while dane != 'w' and dane != 'l':
-    print("Czy chcesz wprowadzic wlasne liczby do posortowania, czy posortowac losowe?")
-    print("w - wlasne, l - losowe")
-    dane = input()
-
-print(" ")
-
 kierunek = 'd'
 # kierunek: rosnaco, malejaco
 while kierunek != 'r' and kierunek != 'm':
     print("Chcesz otrzymac liczby posortowane rosnaco, czy malejaco?")
     print("r - rosnaco, m - malejaco")
     kierunek = input()
+
+print(" ")
+
+dane = 'z'
+# dane: wlasne liczby, lub losowe
+while dane != 'w' and dane != 'l':
+    print("Czy chcesz wprowadzic wlasne liczby do posortowania, czy posortowac losowe?")
+    print("w - wlasne, l - losowe")
+    dane = input()
 
 print(" ")
 
@@ -49,9 +50,24 @@ if dane == 'l':
         x.append(random.randrange(1000))
 
 if dane == 'w':
-    # uzytkownik wypelnia liste
-    print("Wpisz liczby, oddzielajac je spacjami")
-    x = [int(x) for x in input().split()]
+    plikyn = 'b'
+    while plikyn != 'w' and plikyn != 'p':
+        print("Czy chcesz wpisac liczby do posortowania, czy wczytac je z pliku?")
+        print("w - wpisac, p - wczytac plik")
+        plikyn = input()
+        print(" ")
+
+        if plikyn == 'w':
+            # uzytkownik wypelnia liste
+            print("Wpisz liczby, oddzielajac je spacjami:")
+            x = [int(x) for x in input().split()]
+
+        if plikyn == 'p':
+            # uzytkownik wpisauje sciezke do pliku
+            print("Wpisz sciezke do pliku:")
+            path = input()
+            strtmp = fileio.loadFile(path)
+            x = [int(x) for x in strtmp.split()]
 
 #########################################################################
 ##########################  BUBBLE SORT  ################################
