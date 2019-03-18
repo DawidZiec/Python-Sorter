@@ -1,31 +1,31 @@
-def mergeSort(arr): 
-    if len(arr) >1: 
-        mid = len(arr)//2 # Okreslenie srodka listy 
-        L = arr[:mid] # Podzielenie listy na pol
-        R = arr[mid:]
+def mergeSort(x): 
+    if len(x) >1: 
+        middle = len(x)//2 # Okreslenie srodka listy 
+        left = x[:middle] # Podzielenie listy na pol
+        right = x[middle:]
   
-        mergeSort(L) # Sortowanie pierwszej polowki 
-        mergeSort(R) # Sortowanie drugiej polowki
+        mergeSort(left) # Sortowanie pierwszej polowki 
+        mergeSort(right) # Sortowanie drugiej polowki
   
         i = j = k = 0
           
-        # Kopiowanie danych z tymczsaowych list L[] i R[] 
-        while i < len(L) and j < len(R): 
-            if L[i] < R[j]: 
-                arr[k] = L[i] 
+        # Kopiowanie danych z tymczsaowych list left[] i right[] 
+        while i < len(left) and j < len(right): 
+            if left[i] < right[j]: 
+                x[k] = left[i] 
                 i+=1
             else: 
-                arr[k] = R[j] 
+                x[k] = right[j] 
                 j+=1
             k+=1
           
         # Sprawdzanie, czy zaden element nie zostal bez przypisania
-        while i < len(L): 
-            arr[k] = L[i] 
+        while i < len(left): 
+            x[k] = left[i] 
             i+=1
             k+=1
           
-        while j < len(R): 
-            arr[k] = R[j] 
+        while j < len(right): 
+            x[k] = right[j] 
             j+=1
             k+=1

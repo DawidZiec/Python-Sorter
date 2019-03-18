@@ -8,9 +8,9 @@ Algorytmy do zaimplementowania:
     Sortowanie kopcowe / przez kopcowanie (Heap Sort)
 
 
-Dodać wybór sortowanie malejąco, rosnąco - ZROBIONE
+Dodać wybór sortowanie malejąco, rosnąco - ZrightOBIONE
 Dodać import liczb z pliku i eksport liczb do pliku
-Podzielić projekt na mniejsze części (pliki?, funkcje?) - ZROBIONE
+Podzielić projekt na mniejsze części (pliki?, funkcje?) - ZrightOBIONE
 Pomyśleć o floatach
 Pomyśleć o OOP
 
