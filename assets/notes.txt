@@ -9,6 +9,9 @@ Algorytmy zaimplementowane:
 Dodać wybór sortowanie malejąco, rosnąco - ZROBIONE
 Dodać import liczb z pliku i eksport liczb do pliku - ZROBIONE
 Podzielić projekt na mniejsze części (pliki?, funkcje?) - ZROBIONE
+
+// Narazie koniec, inne projekty na horyzoncie
+
 Dodać obsługę floatów
 
 
